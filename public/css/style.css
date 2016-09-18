@@ -1,0 +1,141 @@
+@font-face {
+  font-family: lato;
+  src: url("../fonts/lato/Lato-Regular.ttf"); }
+@font-face {
+  font-family: cormorant;
+  src: url("../fonts/Cormorant_Infant/CormorantInfant-Regular.ttf"); }
+* {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, a, p {
+  color: #333;
+  font-family: cormorant;
+  font-weight: 100; }
+
+a {
+  text-decoration: none; }
+
+p, li, a {
+  letter-spacing: 1px;
+  line-height: 1.5em; }
+
+h1 {
+  font-size: 36px;
+  margin: 30px 0;
+  text-align: center; }
+
+h3 {
+  font-size: 24px; }
+
+p {
+  font-size: 16px;
+  line-height: 1.7em; }
+
+.btn {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  padding: 5px 10px;
+  text-align: center; }
+  .btn:hover {
+    background: #e5e5e5; }
+
+html {
+  height: 100%;
+  width: 100%; }
+
+body {
+  background: #F5F8FA;
+  display: table;
+  height: 100%;
+  width: 100%; }
+
+body {
+  min-height: 100%; }
+
+header {
+  float: left;
+  position: relative;
+  width: 100%; }
+
+.container {
+  height: 100%;
+  margin: 30px auto;
+  width: 700px; }
+
+.username {
+  color: #666;
+  cursor: pointer;
+  background: #fff;
+  padding: 0 7px; }
+
+.btn-refresh {
+  cursor: pointer;
+  float: left;
+  font-family: lato;
+  font-size: 14px;
+  margin: 3px 0;
+  width: 100px; }
+
+.edit-hint {
+  position: absolute;
+  right: 44px;
+  top: 15px; }
+
+pre {
+  line-height: 1.7em;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word; }
+
+.tweets {
+  float: left;
+  width: 100%; }
+  .tweets .tweet-single {
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #e1e8ed;
+    float: left;
+    margin: 5px 0;
+    padding: 15px;
+    position: relative;
+    width: 100%; }
+    .tweets .tweet-single .left {
+      float: left;
+      width: 100px; }
+      .tweets .tweet-single .left img {
+        border-radius: 10px;
+        margin-top: 7px;
+        width: 75px; }
+    .tweets .tweet-single .right {
+      float: left;
+      width: calc(100% - 100px); }
+      .tweets .tweet-single .right p {
+        margin-bottom: 10px; }
+        .tweets .tweet-single .right p:nth-child(1) {
+          font-family: lato;
+          font-size: 13px;
+          font-weight: 600; }
+          .tweets .tweet-single .right p:nth-child(1) span {
+            color: #666;
+            font-size: 12px; }
+            .tweets .tweet-single .right p:nth-child(1) span:first-child {
+              margin-left: 5px; }
+            .tweets .tweet-single .right p:nth-child(1) span:last-child {
+              color: #aaa;
+              float: right;
+              font-size: 11px;
+              font-weight: 100;
+              margin-right: 15px; }
+
+footer {
+  float: left;
+  margin-top: 30px;
+  padding: 15px;
+  width: 100%; }
+  footer p {
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

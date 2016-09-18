@@ -1,0 +1,30 @@
+<div class="container">
+	<header>
+		<h1>Epic Tweets by 
+			<span class="username">{{name}}</span>
+			<form ng-submit="changeUser()">
+				<input type="text" placeholder="Username" ng-model="username">
+				<input type="submit" value="Search">
+			</form>
+		</h1>
+		<!-- <p class="edit-hint">(Double Click to edit)</p> -->
+	</header>
+
+	<div class="tweets">
+		<p class="btn btn-refresh" ng-click="refresh()">Refresh</p>
+		<div class="tweet-single" ng-repeat="x in tweets | limitTo : 10">
+			<div class="left">
+				 <img src="{{x.user.profile_image_url}}">
+			</div>
+			<div class="right">
+				<p>{{x.user.name}} <span>@{{x.user.screen_name}}</span> <span>{{x.created_at}}</span></p>
+				<p><pre>{{x.text}}</pre></p>
+				
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<p>App Created & Desinged by Sumit Bhaintwal</p>
+	</footer>
+</div>
